@@ -33,7 +33,7 @@ class Student
     DB[:conn].execute(sql)
   end
 
-  def self.create(name:, grade:)
+  def self.create(name:, grade:) #can use the symbols to bring in the keys separately
     student = Student.new(name, grade)
     student.save
     student
